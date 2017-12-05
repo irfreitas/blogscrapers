@@ -1,6 +1,6 @@
 # blogscrapers
 
-This package is based off the original scripts located at "jbharwani/blogscrapers".  The current status of this repo demonstrates scraping tools for blogspot and typepad style blogs, but can be adapted for use with any blog with the change of a few xpaths. The updated example scrapers use scrapy, beautifulsoup (works best with lxml also installed), and a working knowledge of xpath.
+This package is based off the original scripts located at [jbharwani/blogscrapers](https://github.com/jbharwani/blogscrapers).  The current status of this repo demonstrates scraping tools for blogspot and typepad style blogs, but can be adapted for use with any blog with the change of a few xpaths. The updated example scrapers use scrapy, beautifulsoup (works best with lxml also installed), and a working knowledge of xpath.
 
 Need to install scrapy and beautifulsoup and lxml
 	pip install scrapy
