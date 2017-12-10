@@ -88,9 +88,13 @@ class test_spider(scrapy.Spider):
 
         try:
             comment_author = []
-            for cauthor in response.xpath('//dt[contains(@class, "comment-author")]/a/text()'):
-                extracted = cauthor.extract()
-                comment_author.append(extracted)
+            for cauthor in response.xpath('//dt[contains(@class, "comment-author")]'):
+                try:
+                    if len(Selector(text=cauthor.extract().xpath('//dt[contains[@class, "comment-author")]/a/text()') !=0:
+                        extracted = cauthor.extract()
+                        comment_author.append(extracted)
+                    else:
+                        comment_author.append("NA")
         except:
             comment_author = []
 
